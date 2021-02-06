@@ -32,7 +32,7 @@ install:
 
 # 这里定义环境变量，用于做ci测试
 env:
-  - test_demo=test/test_demo.py
+  - test_demo=test_demo.py
 
 # 运行测试用例命令
 script:
