@@ -24,7 +24,17 @@ python:
 before_install:
   - python -m pip install --upgrade pip
 install:
-  - pip install -r requirements.txt
+#  - pip install -r requirements.txt
+  - pip install poetry
+  - pip install pytest
+  - poetry install
 # command to run tests
+
+# 这里定义环境变量，用于做ci测试
+env:
+  - test_demo=test/test_demo.py
+
+# 运行测试用例命令
 script:
-  - pytest
+#  - pytest
+  - pytest $test_demo
