@@ -16,11 +16,7 @@ jobs:
       env: PATH=/c/Python38:/c/Python38/Scripts:$PATH
 python:
   - "2.7"
-  - "3.4"
-  - "3.5"
   - "3.6"      # current default Python on Travis CI
-  - "3.7"
-  - "3.8"
   - "3.9"
   - "3.9-dev"  # 3.9 development branch
   - "nightly"  # nightly build
